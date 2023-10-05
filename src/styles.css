@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.button{
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 119, 0);
+    width: 100px;
+    padding: 5px;
+}
+
+.button:hover{
+    font-weight: bold;
+    transform: scale(103%);
+}
+
+html, body { height: 100%; scroll-behavior: smooth; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

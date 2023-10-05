@@ -1,0 +1,170 @@
+<!--===================MAIN CONTENT==================-->
+<div class="main">
+    <div class="containerMain">
+       <img src= {{background}} id="mainImage">
+    
+       <div class="content">
+       <h1>Film, serie TV e tanto altro. 
+        <br>Senza limiti.</h1>
+        <h2>Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h2>
+        <h3>Vuoi guardare LabTv? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
+    
+        <button class="button" [routerLink]="['/registrazione']" style="margin-top:20px;">Inizia ></button>
+      </div>
+      </div>
+    </div>
+
+    <!--=======================OTHER CONTENT=====================-->
+
+    <div class="other-content">
+        <div class="first">
+          <div class="title">
+            <h1>Goditi LabTv sulla tua TV.</h1>
+      
+            <h3>Guarda LabTv su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.
+            </h3>
+          </div>
+      
+          <div class="image">
+            <img src={{firstImage}}>
+          </div>
+        </div>
+      
+        <div class="second">
+      
+          <div class="image">
+            <img src={{secondImage}}>
+          </div>
+      
+          <div class="title">
+            <h1>Scarica le tue serie da guardare offline.</h1>
+      
+            <h3>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</h3>
+          </div>
+        </div>
+      
+        <div class="third">
+      
+          <div class="title">
+            <h1>Guarda LabTv ovunque.</h1>
+      
+            <h3>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e
+              senza spendere di più.</h3>
+          </div>
+      
+          <div class="image">
+            <img src={{thirdImage}}>
+          </div>
+      
+          <div class="fourth">
+            <div class="image">
+              <img src={{fourthImage}} id="thirdImage">
+            </div>
+            <div class="title">
+              <h1>Crea profili per i bambini.</h1>
+      
+              <h3>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già
+                incluso nel tuo abbonamento.</h3>
+            </div>
+      
+          </div>
+      
+          <div class="acc">
+            <h1 class="title">Domande frequenti</h1>
+      
+            <div class="accordion" id="accordionExample">
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Cos'è LabTv?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    LabTv è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e
+                    tanto altro su una vasta gamma di dispositivi connessi a Internet.
+      
+                    Guarda quello che vuoi, in qualsiasi momento e senza interruzioni pubblicitarie. Il tutto a una quota
+                    mensile ridotta. C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni
+                    settimana!
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Quanto costa LabTv?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming, il tutto per un
+                    importo mensile fisso. Piani da 7,99 € a 17,99 € al mese. Nessun costo aggiuntivo, nessun contratto.
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Dove posso guardare LabTv?</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Guarda LabTv dove vuoi, quando vuoi. Accedi al tuo account per guardare subito LabTv dal tuo computer su
+                    LabTv.com oppure da qualsiasi dispositivo connesso a Internet che supporta l'app LabTv, come smart TV,
+                    smartphone, tablet, lettori multimediali per streaming e console per videogiochi.
+      
+                    Con l'app per iOS, Android e Windows 10 puoi anche scaricare i tuoi programmi preferiti. Usa la
+                    funzionalità di download per guardare i contenuti mentre sei in viaggio e senza connessione a Internet.
+                    Porta LabTv sempre con te.
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Come posso disdire?</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    LabTv è flessibile. Nessun contratto fastidioso e nessun impegno. Puoi facilmente disdire il tuo contratto
+                    online con due clic. Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Cosa posso guardare su LabTv?</button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime, originali Netflix
+                    pluripremiati e tanto altro. Guarda tutto quello che vuoi, in qualsiasi momento.
+                  </div>
+                </div>
+      
+      
+              </div>
+    
+      
+            </div>
+          </div>

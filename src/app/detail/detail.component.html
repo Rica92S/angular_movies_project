@@ -1,0 +1,36 @@
+<div class="detailContainer">
+    <div class="trailer">
+        <!-- <video autoplay controls>
+            <source [src]='(movieTrailer.videoUrl)'>
+        </video> -->
+        <iframe [src]="(movieTrailer.videoUrl)"></iframe>
+
+    </div>
+    
+
+    <div class="details">
+        <h3>{{movieDetails.fullTitle}}</h3>
+    </div>
+        <div class="row">
+            <div class="col-4"> <p>{{movieDetails.genres}}</p></div>
+            
+            <div class="col-4"><p>{{movieDetails.year}}</p></div>
+            <div class="col-4"><p>Durata:{{movieDetails.runtimeStr}}</p></div>
+        </div>
+        <div class="plot">
+            <p id="plot">{{movieDetails.plotLocal}}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-4">Recensioni:{{movieDetails.imDbRating
+            }} <i class="fa-solid fa-star"></i></div>
+            <div class="col-4"><p>Diretto da:{{movieDetails.directors}}</p></div>
+        </div>
+
+
+        <button id="guardaOra"><i class="fa-regular fa-circle-play"></i></button>
+        <a href="javascript:void(0)" (click)="back()">Torna alla lista film</a>
+
+   
+
+

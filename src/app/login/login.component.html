@@ -1,0 +1,18 @@
+
+<div class="container-login">
+    <img src={{background}}>
+
+    <div class="accedi">
+        <h1>Accedi</h1>
+        <form [formGroup]="form">
+            <input type="email" placeholder="Email" id="email" name="email" formControlName="email" [(ngModel)]="email">
+            <p *ngIf="!form.get('email').valid && form.get('email').touched">Inserisci una email valida</p>
+            <input type="password" placeholder="Password" id="password" name="password" formControlName="password" [(ngModel)]="password">
+            <p *ngIf="!form.get('password').valid && form.get('password').touched">Inserisci una password valida</p>
+            <button [disabled]="!form.valid" (click)="onSubmit(form)"> Accedi </button>
+            <a [routerLink]="['/contatti']">Serve aiuto?</a>
+        </form>
+
+        <h5>Prima volta su LabTv? <a [routerLink]="['/registrazione']">Registrati</a></h5>
+    </div>
+</div>

@@ -3,9 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // apy_key:'k_lbqodt83', sospeso
+  //  apy_key:'k_o2ymhenm',sospeso
+   apy_key:'k_d3e99quz', 
+      // apy_key:'k_ncdl37fz',
+      // apy_key:'k_0imk0jhp' sospeso
+      // apy_key: 'k_fny3wwkl',
+      // apy_key: 'k_q17x4cl2'
+      
 };
 
+export const baseUrl=`http://localhost:3000/api/`
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

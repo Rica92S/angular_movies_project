@@ -1,0 +1,78 @@
+<div class="container-contatti">
+    <h1 class="title">Centro Assistenza</h1>
+    <form [formGroup]="formContatti">
+        <div class="form-group">
+            <!-- <input type="text" class="form-control" id="exampleFormControlInput1"
+                placeholder="Su quale argomento hai bisogno di assistenza?"> -->
+                <select name="contatcs" id="contacts">
+                    <option value="Su quale argomento hai bisogno di assistenza?" selected>Su quale argomento hai bisogno di assistenza?</option>
+                    <option value="">Che cos'è LabTv?</option>
+                    <option value="">Non riesco ad accedere a LabTv</option>
+                    <option value="">Fatturazione</option>
+                    <option value="">Come creare/eliminare profili su LabTv</option>
+    
+                </select>
+        </div>
+
+        <h2 *ngIf="isMessageVisible">Messaggio inviato!</h2>
+
+        <div class="form-group" *ngIf="isFormVisible">
+            <label for="exampleFormControlTextarea1">Non hai trovato quello che cercavi? Scrivici!</label>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Il tuo indirizzo email*" required formControlName="email">
+            </div>
+
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Lascia un messaggio...*" required formControlName="text"></textarea>
+
+            <button [disabled]="!formContatti.valid" (click)="onSubmit()">Invia</button>
+        </div>
+
+    </form>
+
+    <h5>Argomenti comuni</h5>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                Come registrarsi a LabTv
+            </div>
+            <div class="col-sm">
+                Piano e listino Prezzi
+            </div>
+            <div class="col-sm">
+                Non riesco ad accedere a Labtv
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <h3>Istruzioni</h3>
+            <ul>
+                <li>Come registrarsi a Netflix</li>
+                <li> Che cos'è Netflix?</li>
+                <li>Piani e listino prezzi</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h3>Visione non riuscita</h3>
+            <ul>
+                <li>Come cambiare la password LabTv</li>
+                <li>LabTv chiede di registrarti quando provi ad accedere</li>
+                <li> Messaggio di LabTv: "Quest'app non è compatibile con il tuo dispositivo".</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h3>Gestisci account</h3>
+            <ul>
+                <li>Non riesco ad accedere a Labtv</li>
+                <li>Come riattivare l'account Netflix</li>
+                <li>L'indirizzo email associato all'account LabTv è stato cambiato senza autorizzazione</li>
+            </ul>
+        </div>
+
+    </div>
+</div>

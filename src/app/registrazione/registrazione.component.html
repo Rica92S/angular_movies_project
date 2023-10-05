@@ -1,0 +1,30 @@
+
+<div class="container-reg">
+    <img src={{background}}>
+
+    <div class="registrati">
+        <h1>Registrati</h1>
+        <form [formGroup]="form">
+            <input type="email" placeholder="Email" id="email" name="email" formControlName="email" [(ngModel)]="email">
+            <p *ngIf="!form.get('email').valid && form.get('email').touched">Inserisci una email valida</p>
+            <input type="password" placeholder="Password" id="password" name="password" formControlName="password" [(ngModel)]="password">
+            <h6>La password deve contenere minimo 8 caratteri, 1 minusc, 1 MAIUSC, 1 numero ed un carattere speciale</h6>
+            <p *ngIf="!form.get('password').valid && form.get('password').touched">Inserisci una password valida</p>
+            <select name="select" id="piani" formControlName="select">
+                <option selected value="Scegli il tuo piano di abbonamento">Scegli il tuo piano di abbonamento</option>
+                <option>Base 7,99€</option>
+                <option>Standard 12,99€</option>
+                <option>Premium 17,99€</option>
+            </select>
+            <p *ngIf="!form.get('select').valid && form.get('select').touched">Scegli il piano di abbonamento</p>
+
+            <label>Accetta le condizioni sulla privacy & cookies policy</label>
+            <input type="checkbox" id="check" name="check" formControlName="check">
+            <p *ngIf="!form.get('check').valid && form.get('check').touched">Accetta le nostre condizioni sulla privacy</p>
+
+
+            <button [disabled]="!form.valid" (click)="onSubmit(form)"> Registrati </button>
+            <a [routerLink]="['/contatti']">Serve aiuto?</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<!--SLIDER PRINCIPALE-->
+<owl-carousel-o [options]="customOptions2" class=".carouselContainer">
+   <ng-template carouselSlide class="carousel-item" *ngFor="let movie of mostPopoular">
+      <img src="{{movie.image}}" alt="" id="mainImage">
+   </ng-template>
+</owl-carousel-o>
+
+<label for="" style="color:#fff; display:block; margin: 10px 5px;">Cerca il tuo film qui!</label>
+<input type="text" placeholder="Inserisci il nome..." id="cerca" name="cerca" [(ngModel)]="cerca">
+
+
+<!--carousel MOST POPOULAR-->
+<h5>Most Popoular</h5>
+<owl-carousel-o [options]="customOptions" class="container">
+   <ng-template carouselSlide class="carousel" *ngFor="let movie of mostPopoular | filter: cerca">
+
+      <img src="{{movie.image}}" alt="" id="slider">
+      <h6> {{movie.title}} </h6><button [routerLink]="['/detail', movie.id]"><i
+            class="fa-regular fa-circle-play"></i></button>
+      <button (click)="Acquista()" [routerLink]="['/carrello']"><i class="fa-solid fa-cart-shopping"></i></button>
+   </ng-template>
+</owl-carousel-o>
+
+<!-- MOST POPOULAR tv -->
+<h5>Most Popoular Tvs</h5>
+<owl-carousel-o [options]="customOptions" class="container">
+ <ng-template carouselSlide class="carousel" *ngFor="let movie of mostPopoularTv">
+
+    <img src="{{movie.image}}" alt="" id="slider">
+    <h6> {{movie.title}} </h6><button [routerLink]="['/detail', movie.id]"><i class="fa-regular fa-circle-play"></i></button>
+
+ </ng-template>
+</owl-carousel-o>
+
+<!--IN THEATERS-->
+<h5>In Theaters</h5>
+<owl-carousel-o [options]="customOptions" class="container">
+ <ng-template carouselSlide class="carousel" *ngFor="let movie of inTheaters">
+
+    <img src="{{movie.image}}" alt="" id="slider">
+    <h6> {{movie.title}} </h6><button [routerLink]="['/detail', movie.id]"><i class="fa-regular fa-circle-play"></i></button>
+
+ </ng-template>
+</owl-carousel-o> 
+
+
+<!--BOX OFFICE -->
+<h5>Box Office</h5>
+<owl-carousel-o [options]="customOptions" class="container">
+ <ng-template carouselSlide class="carousel" *ngFor="let movie of boxOffice">
+
+    <img src="{{movie.image}}" alt="" id="slider">
+    <h6> {{movie.title}} </h6><button [routerLink]="['/detail', movie.id]"><i class="fa-regular fa-circle-play"></i></button>
+
+ </ng-template>
+</owl-carousel-o> 

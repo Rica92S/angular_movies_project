@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-1">
+            <img src={{logo}}>
+        </div>
+
+        <div class="col-8">
+            <ul>
+                <li [routerLink]="['/home']">Home</li>
+                <li [routerLink]="['/catalogo']">Catalogo</li>
+                <li [routerLink]="['/contatti']">Contatti</li>
+                <!-- <input type="text" placeholder="Inserisci un nome" id="cerca" name="cerca" [(ngModel)]="cerca">
+                <button id="searchbar" [routerLink]="['/search-bar']"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+            </ul>
+
+        </div>
+
+        <div class="col-3">
+            <select name="lingua" id="lingua">
+                <option value="Italiano" selected>ITA</option>
+                <option>ENG</option>
+                <option>PT</option>
+            </select>
+
+            <button class="button" [routerLink]="['/login']"> LOGIN </button>
+
+        </div>
+
+    </div>
+    <!--row-->
+</div>
+<!--container-->

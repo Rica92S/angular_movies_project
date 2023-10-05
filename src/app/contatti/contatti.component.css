@@ -1,0 +1,122 @@
+.container-contatti{
+    width: 100%;
+    background-color: #000;
+    margin-top:50px;
+}
+
+form{
+    border-bottom: solid 8px rgb(116, 116, 116);
+}
+
+
+select{display: block;
+    width: 100%;
+    max-width: 50%;
+    background-color: #fff;
+    margin:0 auto;
+    text-align: center;
+    min-height:40px;
+}
+
+
+option{
+    background-color: #8888;
+}
+
+
+ input.ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid{
+    background-color: rgb(246, 156, 156);
+    border:solid 1px red;
+}
+
+h1, h5, h2{
+    text-align: center;
+    color:#fff;
+    margin-top: 50px;
+}
+
+input, textarea{
+    width: 100%;
+    max-width: 50%;
+    margin:0 auto;
+    color:#fff;
+    text-align: center;
+}
+
+textarea{
+    margin-bottom: 30px;
+}
+
+label{
+    text-align: center;
+    display: block;
+    color:#fff;
+    margin:15px;
+}
+
+#email{
+    margin:15px auto;
+    width: 100%;
+    max-width: 30%;
+}
+
+textarea{
+    text-align: left!important;
+}
+
+.col-sm{
+    background-color: rgb(183, 176, 176);
+    margin:10px auto;
+    text-align: center;
+    padding:10px;
+    max-width: 20%;
+    row-gap: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.col-sm:hover{
+    transform: scale(103%);
+}
+
+.col-2{
+    background-color: rgb(255, 119, 0);
+    margin:10px auto;
+    text-align: center;
+    padding:10px;
+    max-width: 30%;
+    row-gap: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    row-gap: 20px;
+}
+
+.col-2 ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.col-2 ul li{
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: left;
+    padding:5px;
+}
+
+.col-2 ul li:hover{
+    color:rgb(64, 64, 64);
+}
+
+button{display: block;
+    margin:10px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 119, 0);
+    width: 100px;
+    padding: 5px;
+}
+
+button:hover{
+    font-weight: bold;
+    transform: scale(103%);
+}

@@ -1,0 +1,113 @@
+/* ==============MAIN CSS=================*/
+.containerMain{
+    position: relative;
+}
+
+#mainImage{
+    width: 100%;
+    height: 700px;
+}
+
+.content{
+    position: absolute;
+    left: 50%;
+    top:10%;
+    transform: translate(-50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    min-height: 450px;
+}
+
+
+button{
+    display: block;
+    margin:10px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 119, 0);
+    width: 150px;
+    padding: 5px;
+}
+
+#email{
+    width: 100%;
+    max-width: 450px;
+    padding:10px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+/*===============OTHER CONTENT CSS===============*/
+
+.other-content{
+    background-color: #000;
+    text-align: center;
+    margin-top:50px;
+    border-top: solid 10px rgba(66, 65, 65, 0.612);
+}
+
+.title{width: 100%;
+    max-width: 40%;
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+    margin-top:50px;
+   
+}
+
+.title h1{
+    font-size: 2.8em;
+}
+
+.image{
+    width: 100%;
+    max-width: 50%;
+    display: inline-block;
+    margin-top:20px;
+}
+
+.second{
+    margin-top:100px;
+    border-top: solid 10px rgba(66, 65, 65, 0.612);
+}
+
+.third{
+    border-top: solid 10px rgba(66, 65, 65, 0.612);
+}
+
+
+.fourth{
+    border-top: solid 10px rgba(66, 65, 65, 0.612);
+}
+
+
+.acc{
+margin-top:50px;
+border-top: solid 10px rgba(66, 65, 65, 0.612);
+
+}
+
+.accordion-header{
+    background-color: #000;
+}
+
+.accordion{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.accordion-item{
+    background-color:#000;
+    color:#fff;
+    border:none;
+}
+
+.accordion-button{
+    width: 100%;
+    background-color: #ccc;
+
+}
